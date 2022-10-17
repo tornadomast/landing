@@ -1,0 +1,60 @@
+.promo {
+    margin-top: 100px;
+    padding: 20px 10px;
+    &__wrapper {
+        display: flex;
+        flex: 50%;
+        align-items: center;
+        .promo-text {
+            color: #fff;
+            &__header {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 54px;
+            }
+            &__subtitle {
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 78px;
+                span {
+                    color: $main-color;
+                }
+            }
+            &__descr {
+                position: relative;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 40px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom:-20px;
+                    left: 0;
+                    width: 65px;
+                    height: 1px;
+                    background-color: $main-color;
+                    
+                }
+            }
+            &__about {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .my-foto {
+            position: relative;
+            &__lines {
+                position: absolute;
+                left: 25px;
+                bottom: 15px;
+            }
+            &__plus {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}

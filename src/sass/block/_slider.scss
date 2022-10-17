@@ -1,0 +1,45 @@
+.slider {
+    margin-top: 100px;
+    &-carousel {
+        padding: 20px 10px;
+        display: block;
+        width: 890px;
+        margin: 0 auto;
+        object-fit: cover;
+        &__wrapp {
+            padding: 98px 10px;
+            border: 1px solid $main-color;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 12px;
+        }
+        &__text {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            color: #fff;
+        }
+        &__btn {
+            display: block;
+            margin-top: 40px;
+            background: #FBFF22;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 12px;
+            color: black;
+        }
+        img {
+            //object-fit: cover;
+            width: 400px;
+            height: 240px;
+        }
+    }
+    
+}
+.slick-track{
+    text-align: center;
+}
