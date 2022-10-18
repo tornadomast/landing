@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.min.css">
     <title>landing page</title>
 </head>
@@ -54,22 +55,37 @@
         </div>
     </div>
 </section>
-<section class="slider">
-    <div class="container">
-        <div class="slider-carousel">
-            <div class="slider-carousel__wrapp">
-                <div class="slider-carousel__picture"><img src="./img/DreamUp.jpg" alt="slide">
-                </div>
-                <div class="slider-carousel__text">
-                    <div class="header">Coach<br>Landing Page</div>
-                    <a href="#" class="slider-carousel__btn">View Details</a>
+<div class="container">
+<section class="swiper">
+   
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="border">
+                <img src="./img/Dream Up.png" alt="">
+                <div class="box">
+                    <div class="header"><span>Coach</span>ing<br>Landing Page</div>
+                    <a href="https://krasulia.com.ua/" target="_blank" class="btn">View Details</a>
                 </div>
             </div>
+           
             
+        </div>
+        <div class="swiper-slide">
+            <div class="border">
+                <img src="./img/pulse.jpg" alt="">
+                <div class="box">
+                    <div class="header"><span>Run</span>Smart<br>Landing Page</div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
     </div>
-    </div> 
+    <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+ 
 </section>
+</div>
 </body>
-<script src="./js/slick.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 </html>
