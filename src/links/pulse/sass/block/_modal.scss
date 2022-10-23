@@ -1,0 +1,94 @@
+.overflow {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .56);
+    top: 0;
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    border-radius: 10px;
+    padding: 35px 30px 40px 30px;
+    width: 382px;
+    min-height: 402px;
+    background-color: rgb(196, 196, 196);
+    &__header {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 19px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__close {
+        position: absolute;
+        color: $main-color;
+        top: 0;
+        right: 0px;
+        line-height: 30px;
+        cursor: pointer;
+        font-size: 30px;
+        &:hover {
+            font-size: 27px;
+
+        }
+    }
+    &_answer{
+        min-height: 143px;
+        img {
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+        }
+    }
+    label.error {
+        border: none;
+    }
+    .error {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 10px;
+        line-height: px;
+        border:1px solid red;
+        color: $main-color;
+    }
+}
+}
+    
+
+#consultation, #order, #answer{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .overflow {
+    .modal {
+        &__descr {
+            margin-bottom: 10px;
+        }
+    }
+    }
+}
+
+@media (max-width: 575px) {
+    .overflow{
+    .modal {
+        padding-top: 10px;
+        width: 65%;
+        min-height: 60%;
+        &__descr {
+            margin-bottom: 10px;
+        }
+    }
+}
+}

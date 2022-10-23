@@ -1,0 +1,97 @@
+.experience {
+    padding-top: 120px;
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__wrap {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background: $main-color;
+                left: -15px;
+                top: 8px;
+
+            }
+        }
+        
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            &::after {
+                content: '';
+                width: 1px;
+                height: calc(100% + 16px);
+                position: absolute;
+                top: -16px;
+                left: -40px;
+                background-color: #000;
+            }
+            
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 76px;
+            position: absolute;
+            top: 68px;
+            left: -39px;
+            background-color: #000;
+        }
+        &-head {
+            position: relative;
+            padding: 46px 0 0 100px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include circle;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        &-diplom {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 18px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        &-body {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: bold;
+        }
+    }
+}
+

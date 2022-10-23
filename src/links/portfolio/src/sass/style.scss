@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+
+@import './libs/bootstrap-reboot.min.css';
+@import './base/variables';
+@import './base/mixins';
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.divided {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+
+@import 'block/promo';
+@import 'block/title';
+@import 'block/button';
+@import 'block/link';
+@import 'block/myself';
+@import 'block/menu';
+@import 'block/about';
+@import 'block/experience';
+@import 'block/skills';
+@import 'block/portfolio';
+@import 'block/prices';
+@import 'block/contacts';
+@import 'block/media';
+@import './block/language';

@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: #1E1E1E;
+    background-color: #000;
 } 
 
 @import './block/navbar';
@@ -25,3 +25,6 @@ body {
 @import './block/projects';
 @import './block/slider';
 @import './block/skills';
+@import './block/contacts';
+@import './block/footer';
+@import './block/modal';

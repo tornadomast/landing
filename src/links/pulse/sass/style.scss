@@ -1,0 +1,34 @@
+@import './lbs/animate.scss';
+@import './lbs/fonts.scss';
+@import './lbs/slick.scss';
+
+
+
+
+@import './base/_variables';
+@import './base/variables';
+@import './block/promo';
+@import './block/header';
+@import './block/button';
+@import './block/benefits';
+@import './block/media';
+@import './block/consultation';
+@import './block/carousel';
+@import './block/catalog';
+@import './block/reviews';
+@import './block/contacts';
+@import './block/modal';
+@import './block/scroll-up';
+* {
+    font-family: 'Museo Sans Curl', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+

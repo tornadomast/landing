@@ -1,0 +1,31 @@
+.links {
+    text-align: center;
+    &__wrapp {
+        color: #fff;
+        flex-direction: row;
+        padding: 10px 0;
+        .items {
+            margin-right: 40px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #E4E4E4;
+            text-decoration: none;
+            &:hover {
+                text-shadow: 1px 1px 2px $main-color;
+            }
+            
+            
+        }
+        :last-child {
+            margin-right: unset;
+        }
+    }
+    &__info {
+        padding: 50px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+}

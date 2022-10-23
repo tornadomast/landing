@@ -1,0 +1,28 @@
+.contacts {
+    &_center {
+        display: block;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 600;
+        font-size: 300px;
+    }
+    &__btn {
+        display: block;
+        margin: 150px auto 70px auto;
+        border: 2px solid #FBFF22;
+        border-radius: 5px;
+        width: 148px;
+        height: 60px;
+        background-color: transparent;
+        color: $main-color;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        transition: 0.5s all;
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+}
