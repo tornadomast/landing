@@ -1,7 +1,7 @@
 .promo {
     margin-top: 100px;
-    padding: 20px 10px;
     &__wrapper {
+        padding: 20px 10px;
         display: flex;
         flex: 50%;
         align-items: center;
@@ -58,3 +58,73 @@
         }
     }
 }
+
+
+@media (max-width: 992px) {
+    .promo {
+        margin-top: 50px;
+    }
+    .container {
+        max-width: 720px;
+    .promo {
+        &__wrapper {
+            flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        .my-foto {
+            &__pict {
+                margin-top: 10px;
+                object-fit: contain;
+                height: 350px;
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        .my-foto {
+            &__pict {
+                object-fit: contain;
+                height: 250px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        margin-top: 20px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        .promo-text {
+            &__header {
+                font-size: 32px;
+            }
+            &__subtitle {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+        .my-foto {
+            &__pict {
+                object-fit: contain;
+                height: 250px;
+                width: 300px;
+            }
+        }
+    }
+}
+

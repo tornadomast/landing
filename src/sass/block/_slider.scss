@@ -73,3 +73,116 @@
         }
     }   
 }
+
+@media (max-width: 992px) {
+    .swiper {
+        &-slide {
+        .border {
+            padding: 60px 5px;
+        }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper {
+        margin-top: 20px;
+        &-slide {
+        .border {
+            border: none;
+            padding: 10px;
+        }
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            margin-right: 24px;
+        }
+        .header {
+            font-size: 20px;
+            line-height: 33px;
+        }
+        .btn {
+            padding: 4px 9px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+        .swiper {
+            &-button-prev {
+                &_arrNone {
+                    display: block;
+                }
+            }
+            &-button-next {
+                &_arrNone {
+                    display: none;
+                }
+            }
+            margin-top: 20px;
+            img {
+                width: 200px;
+                height: 150px;
+                margin-right: 24px;
+            }
+            .header {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            .btn {
+                padding: 4px 9px;
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+        }
+    }
+    @media (max-width: 375px) {
+        .container {
+            width: 100%;
+        .swiper {
+            margin-top: 10px;
+            img {
+                width: 170px;
+                height: 110px;
+                margin-right: 10px;
+            }
+            .header {
+                font-size: 14px;
+                line-height: 23px;
+            }
+            .btn {
+                padding: 4px 9px;
+                font-size: 14px;
+                line-height: 15px;
+            }
+        }
+    }
+    }
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+    .swiper {
+        margin-top: 10px;
+        img {
+            width: 140px;
+            height: 110px;
+            margin-right: 10px;
+        }
+        .header {
+            font-size: 14px;
+            line-height: 23px;
+        }
+        .btn {
+            padding: 4px 9px;
+            font-size: 14px;
+            line-height: 15px;
+        }
+    }
+}
+}

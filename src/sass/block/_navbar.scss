@@ -1,6 +1,6 @@
 .navbar {
-    background: linear-gradient(180deg, rgba(51, 49, 49, 0.7) 0%, rgba(28, 28, 28, 0.376923) 99.99%, rgba(197, 155, 155, 0) 100%);
-    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
+    // background: linear-gradient(180deg, rgba(51, 49, 49, 0.7) 0%, rgba(28, 28, 28, 0.376923) 99.99%, rgba(197, 155, 155, 0) 100%);
+    // filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.3));
     padding: 20px 10px;
     width: 100%;
     &__wrapper {
@@ -28,7 +28,6 @@
                 
             }
             :last-child {
-                margin-right: unset;
                 border: none;
             }
         }
@@ -68,3 +67,96 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+        .text-link {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        .navbar {
+            &__btn {
+                width: 100px;
+                height: 40px;
+                font-size: 16px;
+            }
+            &-link {
+                    &__title {
+                        display: none;
+                    }
+                }
+            }
+            
+            .text-link {
+                :last-child {
+                    margin-right: 20px;
+                }
+            }  
+        }
+}
+
+@media (max-width: 426px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        .navbar {
+            &__btn {
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+            }
+            &-link {
+                    &__title {
+                        display: none;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            } 
+        }
+    }
+    @media (max-width: 320px) {
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            .navbar {
+                &__btn {
+                    width: 100px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                &-link {
+                        &__title {
+                            display: none;
+                        }
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+                .text-link {
+                    :last-child {
+                        margin-right: 20px;
+                    }
+                }  
+            }
+        }
