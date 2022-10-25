@@ -10,6 +10,7 @@
         visibility: visible;
     }
     .modal-consult {
+        
         position: absolute;
         left: 0%;
         top: 0%;
@@ -135,4 +136,15 @@
         }
     }
     
+}
+
+@media (max-width: 375px) {
+    .overflow {
+
+    .modal-consult {
+        &__form {
+            width: 235px;
+        }
+    }
+}
 }

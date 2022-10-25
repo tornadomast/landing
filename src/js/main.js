@@ -1,13 +1,10 @@
 //слайдер
-new Swiper(".swiper", {
+new Swiper (".swiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    loop: true,
-    
-       
-          
+    loop: true,    
   });
 
 // модальне вікно
@@ -24,12 +21,33 @@ button.addEventListener('click', () => {
   
 });
 navbarBtn.addEventListener('click', () => {
-  modal.classList.toggle('active');
-  overflow.classList.toggle('active');
+  modal.classList.add('active');
+  overflow.classList.add('active');
   
 });
 closeBtn.addEventListener('click', () => {
   modal.classList.remove('active');
   overflow.classList.remove('active');
   
+});
+
+
+$().ready(function() {
+
+  $('#consultsend').submit(function(e) {
+      e.preventDefault();
+      if (!$(this).valid()) {
+          return;
+      }
+      $.ajax({
+          type: "POST",
+          url: "/mailer/smart.php",
+          data: $(this).serialize()
+      }).done(function(){
+          $(this).find("input").val("");
+          $('.overflow, #consultation').fadeOut('slow');
+          $('#consultsend').trigger('reset');
+      });
+      return false;
+      });
 });

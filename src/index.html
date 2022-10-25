@@ -20,8 +20,8 @@
                 </div>
                 <div class="text-link">
                     <a href="#" class="text-link__navi">Home</a>
-                    <a href="#" class="text-link__navi">About</a>
-                    <a href="#" class="text-link__navi">Project</a>
+                    <a href="#about" class="text-link__navi">About</a>
+                    <a href="#project" class="text-link__navi">Project</a>
                 </div>
                 <button class="navbar__btn">Contact Me</button>
             </div>
@@ -31,7 +31,7 @@
     <div class="container">
         <div class="promo__wrapper">
             <div class="promo-text">
-                <div class="promo-text__header">Hello!</div>
+                <div id="about" class="promo-text__header">Hello!</div>
                 <div class="promo-text__subtitle">
                     I'm <span>Oleksii Krhushch</span>
                 </div>
@@ -60,7 +60,7 @@
 <div class="container">
 <section class="swiper">
    
-    <div class="swiper-wrapper">
+    <div id="project" class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="border">
                 <img src="./img/Dream Up.png" alt="">
@@ -68,9 +68,7 @@
                     <div class="header"><span>Coach</span>ing<br>Landing Page<br><span>300$</span></div>
                     <a href="https://krasulia.com.ua/" target="_blank" class="btn">View Details</a>
                 </div>
-            </div>
-           
-            
+            </div>  
         </div>
         <div class="swiper-slide">
             <div class="border">
@@ -95,12 +93,12 @@
         <div class="swiper-button-prev swiper-button-prev_arrNone"></div>
 </section>
 </div>
-<!--
+
 <section class="skills">
     <div class="container">
         <div class="skills projects-title">
             <div class="projects-title__header">MY SKILLS</div>
-            <div class="projects-title__subtext skills_center">MY SKILLS</div>
+            <div class="projects-title__subtext projects-title__subtext_center">MY SKILLS</div>
         </div>
         <div class="skills__wrapper">
             <div class="skills__item">
@@ -138,16 +136,18 @@
           </div>
     </div>
 </section>
+
 <section class="contacts">
     <div class="container">
         <div class="contacts projects-title">
             <div class="projects-title__header">Say Hi! and let's create <br>
             something together.</div>
-            <div class="projects-title__subtext contacts_center">Say Hi</div>
+            <div class="projects-title__subtext projects-title__subtext_center">Say Hi</div>
         </div>
         <button id="openContact" class="contacts__btn">Contact Me</button>
     </div>
 </section>
+
 <footer class="links">
     <div class="container">
         <div class="links__wrapp">
@@ -160,21 +160,25 @@
             &copy; Oleksii Khrushch 2022
         </div>
     </div>
-</footer> -->
+</footer> 
 <div class="overflow">
     <div class="modal-consult" id="consultation">
         <div class="modal-consult__close">&#10008;</div>
         <div class="modal-consult__header">Заповніть форму заявки</div>
         <div class="modal-consult__descr">і я обов'язково з вами зв'яжусь</div>
         <form class="modal-consult__form" action="#" id="consultsend">
-            <input  name="name" placeholder="Ваше ім'я" type="text">
-            <input  name="phone" placeholder="Ваш телефон" >
+            <input required name="name" placeholder="Ваше ім'я" type="text">
+            <input required name="phone" placeholder="Ваш телефон" >
             <textarea  name="comment" placeholder="напишіть повідомлення..."></textarea>
             <button  class="modal-consult__btn">Sеnd</button>
         </form>
     </div>
 </div>
-</body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
+</body>
+
 </html>

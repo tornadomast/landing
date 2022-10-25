@@ -29,3 +29,39 @@
         color: #fff;
     }
 }
+
+@media (max-width: 576px) {
+    .links {
+        &__wrapp {
+            display: inline-table;
+        }  
+    }
+}
+@media (max-width: 415px) {
+    .links {
+        &__wrapp {
+            display: flex;
+        }  
+    }
+}
+@media (max-width: 375px) {
+    .links {
+        &__wrapp {
+            display: inline-block;
+            .items {
+                padding: 20px;
+            }
+        }  
+    }
+}
+@media (max-width: 330px) {
+    .links {
+        &__wrapp {
+            display: flex;
+            flex-direction: column;
+            .items {
+                margin-right: 4px;
+            }
+        }  
+    }
+}

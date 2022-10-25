@@ -87,6 +87,16 @@
 @media (max-width: 576px) {
     .swiper {
         margin-top: 20px;
+        &-button-prev {
+            &_arrNone {
+                display: none;
+            }
+        }
+        &-button-next {
+            &_arrNone {
+                display: none;
+            }
+        }
         &-slide {
         .border {
             border: none;
@@ -115,16 +125,7 @@
         width: 100%;
         .swiper {
             padding: 0;
-            &-button-prev {
-                &_arrNone {
-                    display: block;
-                }
-            }
-            &-button-next {
-                &_arrNone {
-                    display: none;
-                }
-            }
+            
             margin-top: 20px;
             img {
                 width: 200px;
