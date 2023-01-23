@@ -5,20 +5,19 @@
     background-color: rgb(0, 0, 0, .56);
     top: 0;
     visibility: hidden;
-    z-index: 30;
+    z-index: 20;
     &.active {
         visibility: visible;
     }
     .modal-consult {
-        
         position: absolute;
-        left: 0%;
+        left: -100%;
         top: 0%;
         transform: translate(-50%, -50% );
         border-radius: 10px;
         padding: 35px 30px 30px 30px;
         width: fit-content;
-        min-height: fit-content;
+        height: fit-content;
         background-color: #131313;
         box-shadow: 1px 1px 15px $main-color;
         &__close {
@@ -52,7 +51,7 @@
             letter-spacing: 2px;
         }
         &__form {
-            margin-top: 36px;
+            margin-top: 15px;
             display: flex;
             flex-direction: column;
             width: 300px;
@@ -120,7 +119,7 @@
             border: 2px solid #FBFF22;
             border-radius: 5px;
             width: 148px;
-            height: 60px;
+            height: 45px;
             background-color: transparent;
             color: $main-color;
             font-weight: 600;
@@ -134,10 +133,65 @@
             left: 50%;
             top: 50%;
         }
+        
     }
+    .modal-answer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50% );
+        border-radius: 10px;
+        padding: 35px 30px 40px 30px;
+        width: 382px;
+        min-height: fit-content;
+        background-color: rgb(196, 196, 196);
+        visibility: visible;
+        &__header {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 19px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__descr {
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__close {
+            position: absolute;
+            color: $main-color;
+            top: 0;
+            right: 0px;
+            line-height: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            &:hover {
+                font-size: 27px;
     
+            }
+        }
+        // &.active {
+        //     visibility: visible;
+        //     transition: all 1s ease-in 0s;
+        //     left: 50%;
+        //     top: 50%;
+        //     z-index: 32;
+        // }
+        
+    }
 }
-
+#answer {
+    display: none;
+}
+// @media (max-width: 767px) {
+//     .modal-consult {
+//         height: 100px;
+//     }
+// }
 @media (max-width: 375px) {
     .overflow {
 
@@ -148,3 +202,4 @@
     }
 }
 }
+

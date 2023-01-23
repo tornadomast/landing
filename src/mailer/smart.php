@@ -1,7 +1,7 @@
 <?php 
 
 $name = $_POST['name'];
-$email = $_POST['email'];
+$phone = $_POST['phone'];
 $textin = $_POST['comment'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -32,7 +32,7 @@ $mail->Subject = 'Letter';
 $mail->Body    = '
 		Вам прийшов лист  <br> 
 	Имя: ' . $name . ' <br>
-	E-mail: ' . $email . ' <br>
+	Tel: ' . $phone . ' <br>
 	Text: ' . $textin . '' ;
 
 if(!$mail->send()) {
